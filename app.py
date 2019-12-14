@@ -6,3 +6,11 @@ app = Flask(__name__)
 @app.route('/')
 def music_index():
     return render_template('index.html')
+
+@app.route('/quiz')
+def quiz_page():
+    return render_template('quiz_page.html')
+
+@app.route('/login')
+def login_page():
+    return render_template('login_page.html')
