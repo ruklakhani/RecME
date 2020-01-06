@@ -7,6 +7,10 @@ app = Flask(__name__)
 def music_index():
     return render_template('index.html')
 
+@app.route('/playlist')
+def playlist_generator():
+    return render_template('playlist_generator.html')
+
 @app.route('/quiz')
 def quiz_page():
     return render_template('quiz_page.html')
