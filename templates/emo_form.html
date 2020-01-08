@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html style="background-color: #2bd528;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>recme</title>
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="static/css/Footer-Basic.css">
+    <link rel="stylesheet" href="static/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color: rgb(43,213,40);">
+        <div class="container"><a class="navbar-brand" href="/" style="background-color: #ffffff;padding: 15px;">RecMe!</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="background-color: #ff975c;color: rgb(70,87,101);">Country</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="background-color: #ff975c;">Alternative</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="background-color: #ff975c;">Pop</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="background-color: #ff975c;">Rock</a></li>
+                </ul><span class="navbar-text actions" style="background-color: #fff857;padding: 15px;"> <a class="login" href="/login">Log In</a><a class="btn btn-light action-button" role="button" href="#">Sign Up</a></span></div>
+        </div>
+    </nav>
+
+    <img src="static/img/music.png" style="width: 100%;">
+    
+    <div class="card-group">
+        <div class="card">
+            <div class="card-body" style="background-color: #bfbfbf;">
+                <h4 class="card-title">EMO MUSIC RECOMENDATION!</h4>
+                <form action='/emo_results' method='GET'>
+                <p>
+                    <label for='emo_artists'>Check your top artists from the selection</label>
+                    <br>
+                    <input type="checkbox" name="artist" value="patd"> Panic! at the Disco<br>
+                    <input type="checkbox" name="artist" value="ptv"> Pierce the Veil<br>
+                    <input type="checkbox" name="artist" value="blink182"> Blink 182<br>
+                    <input type="checkbox" name="artist" value="mcr"> My Chemical Romance<br>
+                    <input type="checkbox" name="artist" value="falloutboy"> Fall Out Boy<br>
+                    <input type="checkbox" name="artist" value="sws"> Sleeping With Sirens<br>
+                    <input type="checkbox" name="artist" value="jimmyeatworld"> Jimmy Eat World<br>
+                    <input type="checkbox" name="artist" value="linkinpark"> Linkin Park<br>
+                    <input type="checkbox" name="artist" value="paramore"> Paramore<br>
+                    <input type="checkbox" name="artist" value="fallinginreverse"> Falling In Reverse<br>
+                    <input type="checkbox" name="artist" value="greenday"> Green Day<br>
+                    <input type="checkbox" name="artist" value="maydayparade"> Mayday Parade<br>
+                    <input type="checkbox" name="artist" value="21pilots"> 21 Pilots<br>
+                    <input type="checkbox" name="artist" value="afa"> Asking for Alexandria<br>
+                    <input type="checkbox" name="artist" value="sum41"> Sum 41<br>
+                    <br>
+                    <button type="submit">Submit</button>
+                </p>                
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-basic" style="height: 45px;background-color: rgb(43,213,40);">
+        <footer>
+            <div class="social" style="background-color: #2bd528;"><a href="#" style="background-color: #fff857;"><i class="icon ion-social-instagram"></i></a><a href="#" style="background-color: #fff857;"><i class="icon ion-social-snapchat"></i></a><a href="#" style="background-color: #fff857;"><i class="icon ion-social-twitter"></i></a>
+                <a
+                    href="#" style="background-color: #fff857;"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline" style="background-color: #2bd528;">
+                <li class="list-inline-item"><a href="#" style="background-color: #ff975c;">Home</a></li>
+                <li class="list-inline-item"><a href="#" style="background-color: #ff975c;">Services</a></li>
+                <li class="list-inline-item"><a href="#" style="background-color: #ff975c;">About</a></li>
+                <li class="list-inline-item"><a href="#" style="background-color: #ff975c;">Terms</a></li>
+                <li class="list-inline-item"><a href="#" style="background-color: #ff975c;">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright"></p>
+        </footer>
+    </div>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

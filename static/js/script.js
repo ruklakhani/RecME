@@ -1,14 +1,5 @@
 const app = {};
 
-// allow the user to enter some names 
-// app.events = function(){
-// 	$('form').on('submit', function(e){
-// 		e.preventDefault();
-// 		;let artists = $('input[type=search]')
-// 		console.log(artists)
-// 	});
-// };
-
 app.getArists = (artist) => $.ajax({
 	url: 'https://api.spotify.com/v1/search',
 	method: 'GET',
