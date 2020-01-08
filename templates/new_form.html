@@ -1,0 +1,39 @@
+<!-- new_form.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card-group">
+    <div class="card">
+        <div class="card-body" style="background-color: #bfbfbf;">
+            <h4 class="card-title">CREATE A REC FORM!</h4>
+            <form method='POST' action='/form'>
+                <div>
+                    <label class='form_label' for='form_name'>What kind of music are you recommending?</label><br>
+                    <input type="text" name="form_name"><br>
+                    <label class='form_label' for='form_desc'>Input artists you want to recommend!!</label><br>
+                    <textarea class='form_input' id='form_desc' type='text' name='artists'></textarea>
+                </div>
+                <button type='submit' class='submit_btn'style="margin-left: 0px;">Save Form</button>
+            </form>
+        </div>
+    </div>
+</div>       
+<div class="footer-basic" style="height: 45px;background-color: rgb(43,213,40);">
+    <footer>
+        <div class="social" style="background-color: #2bd528;"><a href="#" style="background-color: #fff857;"><i class="icon ion-social-instagram"></i></a><a href="#" style="background-color: #fff857;"><i class="icon ion-social-snapchat"></i></a><a href="#" style="background-color: #fff857;"><i class="icon ion-social-twitter"></i></a>
+            <a
+                href="#" style="background-color: #fff857;"><i class="icon ion-social-facebook"></i></a>
+        </div>
+        <ul class="list-inline" style="background-color: #2bd528;">
+            <li class="list-inline-item"><a href="#" style="background-color: #ff975c;">Home</a></li>
+            <li class="list-inline-item"><a href="#" style="background-color: #ff975c;">Services</a></li>
+            <li class="list-inline-item"><a href="#" style="background-color: #ff975c;">About</a></li>
+            <li class="list-inline-item"><a href="#" style="background-color: #ff975c;">Terms</a></li>
+            <li class="list-inline-item"><a href="#" style="background-color: #ff975c;">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright"></p>
+    </footer>
+</div>
+<script src="static/js/jquery.min.js"></script>
+<script src="static/bootstrap/js/bootstrap.min.js"></script>
+{% endblock %}

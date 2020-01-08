@@ -1,34 +1,8 @@
-<!DOCTYPE html>
-<html style="background-color: #2bd528;">
+<!-- index.html -->
+{% extends 'base.html' %}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>recme</title>
-    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="static/css/Footer-Basic.css">
-    <link rel="stylesheet" href="static/css/Navigation-with-Button.css">
-    <link rel="stylesheet" href="static/css/styles.css">
-</head>
-
-<body>
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color: rgb(43,213,40);">
-        <div class="container"><a class="navbar-brand" href="/" style="background-color: #ffffff;padding: 15px;">RecMe!</a>
-            <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="background-color: #ff975c;">Country</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="background-color: #ff975c;">Alternative</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="background-color: #ff975c;">Pop</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="background-color: #ff975c;">Rock</a></li>
-                </ul>
-                <span class="navbar-text actions" style="background-color: #fff857;padding: 15px;"><a class="login" href="/login">Log In</a><a class="btn btn-light action-button" role="button" href="#">Sign Up</a></span>
-            </div>
-        </div>
-    </nav>
-    <img src="static/img/music.png" style="width: 100%;">
+{% block content %}
+    <body>
             <div class="card-group">
                 <div class="card">
                     <div class="card-body" style="background-color: #bfbfbf;">
@@ -55,9 +29,9 @@
                 </div>
                 <div class="card">
                     <div class="card-body" style="background-color: #bfbfbf;">
-                        <h4 class="card-title">Quiz 2</h4>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                        <a href="/quiz"><button class="btn btn-primary" type="button">Go!</button></a>
+                        <h4 class="card-title">Ruk's Music Recommendations</h4>
+                        <p class="card-text">Choose from a selection of artists that I love and listen to regularly!</p>
+                        <a href="/ruk"><button class="btn btn-primary" type="button">Go!</button></a>
                 </div>
                 <div class="card">
                     <div class="card-body" style="background-color: #bfbfbf;">
@@ -87,6 +61,5 @@
                 </div>
             <script src="static/js/jquery.min.js"></script>
             <script src="static/bootstrap/js/bootstrap.min.js"></script>
-</body>
 
-</html>
+{% endblock %}

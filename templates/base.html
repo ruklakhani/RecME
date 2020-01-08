@@ -1,0 +1,41 @@
+<!-- base.html -->
+
+<!DOCTYPE html>
+<html style="background-color: #2bd528;">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>recme</title>
+        <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../static/fonts/ionicons.min.css">
+        <link rel="stylesheet" href="../static/css/Footer-Basic.css">
+        <link rel="stylesheet" href="../static/css/Navigation-with-Button.css">
+        <link rel="stylesheet" href="../static/css/styles.css">
+
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color: rgb(43,213,40);">
+            <div class="container"><a class="navbar-brand" href="/" style="background-color: #ffffff;padding: 15px;">RecMe!</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="background-color: #ff975c;color: rgb(70,87,101);">Country</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="background-color: #ff975c;">Alternative</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="background-color: #ff975c;">Pop</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="background-color: #ff975c;">Rock</a></li>
+                    </ul>
+                    <span class="navbar-text actions" style="background-color: #fff857;padding: 15px;"> 
+                        <a class="login" href="/login">Log In</a>
+                        <a class="btn btn-light action-button" role="button" href="#">Sign Up</a>
+                        <a class="btn btn-light action-button" role="button" href="/form/new">New Rec Form</a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+        <img src="../static/img/music.png" style="width: 100%;">
+        
+    </head>
+
+    <body>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
