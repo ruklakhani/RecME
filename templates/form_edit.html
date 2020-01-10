@@ -2,14 +2,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class='new_form'>
-    <form method='POST' action='/form/{{form._id}}'>
-        <input type='hidden' name='_method' value='PUT'/>
-        {% include 'partials/base_form.html' %}
+    <div class='new_form'>
+        <form method='POST' action='/form/{{form._id}}'>
+            <input type='hidden' name='_method' value='PUT'/>
+            {% include 'partials/base_form.html' %}
 
-        <button type='submit' class='clown_btn' style="margin-left: 0px;">Update Product</button>
-    </form>
-</div>
+            <button type='submit' class='clown_btn' style="margin-left: 0px;">Update Product</button>
+        </form>
+    </div>
 
 {% include 'partials/footer.html' %}
 
