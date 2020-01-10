@@ -2,20 +2,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-	<main class="main-container">
-		<section>
-			<div class="form">
+<div class="card-group">
+    <div class="card">
+        <div class="card-body" style="background-color: #bfbfbf;">		<section>
+            <div class="form">
                 <p>input artist names, seperate with a comma</p>
-				<form action="">
-					<input type="search" value="">
-					<input type="submit" value="Create">
+                <form action="/playlist/results">
+                    <input type="text" name='artist'>
+                    <input type="submit" value="Create">
                 </form>
-			</div>
-			<div class="playlist">
-				<div class="loader">
-					<div class="inner-circle"></div>
-				</div>
-			</div>
+            </div>
+            <div class="playlist">
+                <div class="loader">
+                    <div class="inner-circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>  
 		</section>
 	</main>
     <div class="footer-basic" style="height: 45px;background-color: rgb(43,213,40);">

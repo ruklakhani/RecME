@@ -1,0 +1,24 @@
+<!-- form_new.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card-group">
+    <div class="card">
+        <div class="card-body" style="background-color: #bfbfbf;">
+            <h4 class="card-title">CREATE A REC FORM!</h4>
+            <form method='POST' action='/form'>
+                <div>
+                    <label class='form_label' for='form_name'>What kind of music are you recommending?</label><br>
+                    <input type="text" name="form_name"><br>
+                    <label class='form_label' for='form_desc'>Input artists you want to recommend!!</label><br>
+                    <textarea class='form_input' id='form_desc' type='text' name='artists'></textarea>
+                </div>
+                <button type='submit' class='submit_btn'style="margin-left: 0px;">Save Form</button>
+            </form>
+        </div>
+    </div>
+</div>   
+    
+{% include 'partials/footer.html' %}
+
+{% endblock %}

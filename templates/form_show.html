@@ -1,0 +1,31 @@
+<!-- show_form.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="card-group">
+        <div class="card">
+            <div class="card-body" style="background-color: #bfbfbf;">
+                <h4 class="card-title">{{form.form_name}}</h4>
+                <p>
+                    <button class='header_btn' onclick="location.href='/form/{{ form._id }}/edit';">Edit Form</button>
+                    <button type='submit' form='delete_form' class='header_btn'>Delete Form</button>
+                </p>
+                    {% for artist in form.artists %}
+                    <input type="checkbox" name="artist" value="{{artist}}"> {{artist}} <br> 
+                    {% endfor %}
+                    <form method='POST' id='delete_form' action='/form/{{form._id}}/delete'>
+                        <input type='hidden' name='_method' value='DELETE'>
+                        <p>
+
+                        </p>
+                        <button type='submit' form='submit_form' class='header_btn'>Submit!</button>
+                    </form>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    {% include 'partials/footer.html' %}
+
+{% endblock %}

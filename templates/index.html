@@ -2,64 +2,36 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <body>
-            <div class="card-group">
-                <div class="card">
-                    <div class="card-body" style="background-color: #bfbfbf;">
-                        <h4 class="card-title">PLAYLIST GENERATOR!</h4>
-                        <p class="card-text">Use this feature after filling out a music recommendation form! The music form will recommend you artists to add to the playlist.</p>
-                        <a href="/playlist"><button class="btn btn-primary" type="button">Go!</button></a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body" style="background-color: #bfbfbf;">
-                        <h4 class="card-title">TOP Songs!</h4>
-                        <div class="card">
-                            <div class="card-body"><a class="card-link" href="/#">Link</a></div>
-                        </div>
-                    </div>
-                </div>
+    <div class="card-group">
+        <div class="card">
+            <div class="card-body" style="background-color: #bfbfbf;">
+                <h4 class="card-title">ARTIST TOP SONGS</h4>
+                <p class="card-text">Use this to find any artist's top songs!</p>
+                <a href="/playlist"><button class="btn btn-primary" type="button">Go!</button></a>
             </div>
-            <div class="card-group">
-                <div class="card">
-                    <div class="card-body" style="background-color: #bfbfbf;">
-                        <h4 class="card-title">Emo Music Recommendations</h4>
-                        <p class="card-text">Choose from a selection of EMO artists that I used to jam to!</p>
-                        <a href="/emo"><button class="btn btn-primary" type="button">Go!</button></a>
-                </div>
-                <div class="card">
-                    <div class="card-body" style="background-color: #bfbfbf;">
-                        <h4 class="card-title">Ruk's Music Recommendations</h4>
-                        <p class="card-text">Choose from a selection of artists that I love and listen to regularly!</p>
-                        <a href="/ruk"><button class="btn btn-primary" type="button">Go!</button></a>
-                </div>
-                <div class="card">
-                    <div class="card-body" style="background-color: #bfbfbf;">
-                        <h4 class="card-title">Quiz 3</h4>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                        <a href="/quiz"><button class="btn btn-primary" type="button">Go!</button></a>
-                    </div>
-                </div>
-                <div class="footer-basic" style="height: 45px;background-color: rgb(43,213,40);">
-                    <footer>
-                        <div class="social" style="background-color: #2bd528;">
-                            <a href="#" style="background-color: #fff857;"><i class="icon ion-social-instagram"></i></a>
-                            <a href="#" style="background-color: #fff857;"><i class="icon ion-social-snapchat"></i></a>
-                            <a href="#" style="background-color: #fff857;"><i class="icon ion-social-twitter"></i></a>
-                            <a
-                                href="#" style="background-color: #fff857;"><i class="icon ion-social-facebook"></i></a>
-                        </div>
-                        <ul class="list-inline" style="background-color: #2bd528;">
-                            <li class="list-inline-item"><a href="#" style="background-color: #ff975c;">Home</a></li>
-                            <li class="list-inline-item"><a href="#" style="background-color: #ff975c;">Services</a></li>
-                            <li class="list-inline-item"><a href="#" style="background-color: #ff975c;">About</a></li>
-                            <li class="list-inline-item"><a href="#" style="background-color: #ff975c;">Terms</a></li>
-                            <li class="list-inline-item"><a href="#" style="background-color: #ff975c;">Privacy Policy</a></li>
-                        </ul>
-                        <p class="copyright"></p>
-                    </footer>
-                </div>
-            <script src="static/js/jquery.min.js"></script>
-            <script src="static/bootstrap/js/bootstrap.min.js"></script>
+        </div>
+    </div>
+    <div class="card-group">
+        <div class="card">
+            <div class="card-body" style="background-color: #bfbfbf;">
+                <h4 class="card-title">Emo Music Recommendations</h4>
+                <p class="card-text">Choose from a selection of EMO artists that I used to jam to!</p>
+                <a href="/emo"><button class="btn btn-primary" type="button">Go!</button></a>
+        </div>
+        <div class="card">
+            <div class="card-body" style="background-color: #bfbfbf;">
+                <h4 class="card-title">Ruk's Music Recommendations</h4>
+                <p class="card-text">Choose from a selection of artists that I love and listen to regularly!</p>
+                <a href="/ruk"><button class="btn btn-primary" type="button">Go!</button></a>
+        </div>
+        <div class="card">
+            <div class="card-body" style="background-color: #bfbfbf;">
+                <h4 class="card-title">Display Custom Forms Here</h4>
+                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                <a href="/quiz"><button class="btn btn-primary" type="button">Go!</button></a>
+            </div>
+        </div>
+        
+        {% include 'partials/footer.html' %}
 
 {% endblock %}
